@@ -17,6 +17,7 @@ Your program should satisfy the following requirements:
 - it should print out every verse and chorus in the song.
 - it should reduce redundancy by encapsulating reoccurring code in functions.
 - functions should have good, descriptive names.
+- your program should be well structured with good whitespace and indentation.
 - your program should call all the functions in one place at the top of the
   file.
 
