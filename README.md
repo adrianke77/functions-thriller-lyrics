@@ -3,14 +3,14 @@
 Today you're going to learn functions by writing a program to print out the
 lyrics to Michael Jackson's famous son, "Thriller."
 
-The entire song lyrics have been included in a file `lyrics.js`.
-Your job is to format `lyrics.js` into a valid JavaScript program that prints
+The entire song lyrics have been included in a file `thriller.js`.
+Your job is to format `thriller.js` into a valid JavaScript program that prints
 out all the lyrics.
 
 You can run the program in your terminal with this command:
 
 ```
-node lyrics.js
+node thriller.js
 ```
 
 Your program should satisfy the following requirements:
