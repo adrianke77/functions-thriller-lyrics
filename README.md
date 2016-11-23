@@ -23,7 +23,8 @@ Your program should satisfy the following requirements:
 
 Write your program. Run your program. Turn up your speakers and rock out.
 
-## Licensing All content is licensed under a CC­BY­NC­SA 4.0 license.  All
+## Licensing 
+All content is licensed under a CC­BY­NC­SA 4.0 license.  All
 software code is licensed under GNU GPLv3. For commercial use or alternative
 licensing, please contact legal@ga.co.
 
