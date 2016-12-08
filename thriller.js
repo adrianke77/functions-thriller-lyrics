@@ -1,63 +1,53 @@
-[Verse 1:]
-It's close to midnight and something evil's lurking in the dark
-Under the moonlight you see a sight that almost stops your heart
-You try to scream but terror takes the sound before you make it
-You start to freeze as horror looks you right between the eyes,
-You're paralyzed
+verseOne();
+chorus(1);
+verseTwo();
+chorus(2);
+bridge();
+verseThree();
+chorus(3);
+Outro();
 
-[Chorus:]
-'Cause this is thriller, thriller night
-And no one's gonna save you from the beast about to strike
-You know it's thriller, thriller night
-You're fighting for your life inside a killer, thriller tonight
+function verseOne()  {
+console.log("It's close to midnight and something evil's lurking in the dark \nUnder the moonlight you see a sight that almost stops your heart \nYou try to scream but terror takes the sound before you make it \nYou start to freeze as horror looks you right between the eyes, \nYou're paralyzed\n")
+}
 
-[Verse 2:]
-You hear the door slam and realize there's nowhere left to run
-You feel the cold hand and wonder if you'll ever see the sun
-You close your eyes and hope that this is just imagination
-But all the while you hear the creature creepin'up behind
-You're out of time
+function chorus(chorusNo) {
+chorusLine1();
+chorusLine2(chorusNo);
+chorusEnd();
+}
 
-[Chorus:]
-'Cause this is thriller, thriller night
-There ain't no second chance against the thing with forty eyes
-You know it's thriller, thriller night
-You're fighting to survive inside a killer, thriller tonight
+function chorusLine1() {
+console.log("\nCause this is thriller, thriller night")
+}
 
-[Bridge:]
-Night creatures call
-And the dead start to walk in their masquerade
-There's no escapin' the jaws of the alien this time (they're open wide)
-This is the end of your life
+function chorusLine2(chorusNo) {
+	switch(true){
+		case(chorusNo === 1): 
+		console.log("And no one's gonna save you from the beast about to strike");
+		break
+		case(chorusNo > 1): 
+		console.log("There ain't no second chance against the thing with forty eyes");
+		break
+	}
+}
 
-[Verse 3:]
-They're out to get you, there's demons closing in on every side
-They will possess you unless you change the number on your dial
-Now is the time for you and I to cuddle close together
-All thru the night I'll save you from the terrors on the screen,
-I'll make you see
+function chorusEnd() {
+	console.log("You know it's thriller, thriller night\nYou're fighting for your life inside a killer, thriller tonight")
+}
 
-[Chorus:]
-'Cause this is thriller, thriller night
-There ain't no second chance against the thing with forty eyes
-You know it's thriller, thriller night
-You're fighting to survive inside a killer, thriller tonight
+function verseTwo() {
+console.log("\nYou hear the door slam and realize there's nowhere left to run\nYou feel the cold hand and wonder if you'll ever see the sun\nYou close your eyes and hope that this is just imagination\nBut all the while you hear the creature creepin'up behind\nYou're out of time");
+}
 
-[Outro]
-Darkness falls across the land
-The midnite hour is close at hand
-Creatures crawl in search of blood
-To terrorize y'awl's neighbourhood
-And whosoever shall be found
-Without the soul for getting down
-Must stand and face the hounds of hell
-And rot inside a corpse's shell
-The foulest stench is in the air
-The funk of forty thousand years
-And grizzly ghouls from every tomb
-Are closing in to seal your doom
-And though you fight to stay alive
-Your body starts to shiver
-For no mere mortal can resist
-The evil of the thriller
-Can you dig it?!
+function bridge() {
+console.log("\nNight creatures call\nAnd the dead start to walk in their masquerade\nThere's no escapin' the jaws of the alien this time (they're open wide)\nThis is the end of your life")
+}
+
+function verseThree() {
+console.log("\nThey're out to get you, there's demons closing in on every side\nThey will possess you unless you change the number on your dial\nNow is the time for you and I to cuddle close together\nAll thru the night I'll save you from the terrors on the screen,\nI'll make you see")
+}
+
+function Outro() {
+console.log("\nDarkness falls across the land\nThe midnite hour is close at hand\nCreatures crawl in search of blood\nTo terrorize y'awl's neighbourhood\nAnd whosoever shall be found\nWithout the soul for getting down\nMust stand and face the hounds of hell\nAnd rot inside a corpse's shell\nThe foulest stench is in the air\nThe funk of forty thousand years\nAnd grizzly ghouls from every tomb\nAre closing in to seal your doom\nAnd though you fight to stay alive\nYour body starts to shiver\nFor no mere mortal can resist\nThe evil of the thriller\nCan you dig it?!")
+}
